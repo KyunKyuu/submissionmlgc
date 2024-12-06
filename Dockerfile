@@ -1,5 +1,5 @@
 # Gunakan base image Node.js berbasis Alpine untuk ukuran lebih kecil
-FROM node:18.16-alpine
+FROM node:18
 
 # Set working directory di dalam container
 WORKDIR /app
@@ -14,6 +14,7 @@ RUN npm install
 COPY . .
 
 # Ekspos port yang akan digunakan oleh aplikasi
+EXPOSE 8080
 
 # Set environment variable untuk Google Cloud Run
 
