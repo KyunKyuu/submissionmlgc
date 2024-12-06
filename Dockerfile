@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies (hanya untuk production)
-RUN npm install --production
+RUN npm install
 
 # Salin seluruh kode aplikasi ke dalam container
 COPY . .
@@ -17,7 +17,7 @@ COPY . .
 EXPOSE 8080
 
 # Set environment variable untuk Google Cloud Run
-ENV PORT=8080
+
 
 # Jalankan aplikasi
-CMD ["npm","run", "start"]
+CMD ["npm", "start"]
