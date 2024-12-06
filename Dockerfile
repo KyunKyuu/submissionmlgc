@@ -14,7 +14,6 @@ RUN npm install
 COPY . .
 
 # Ekspos port yang akan digunakan oleh aplikasi
-EXPOSE 3000
 
 # Set environment variable untuk Google Cloud Run
 
