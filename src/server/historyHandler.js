@@ -2,7 +2,7 @@ const { Firestore } = require("@google-cloud/firestore");
 
 // Inisialisasi Firestore menggunakan kredensial bawaan (ADC)
 const db = new Firestore({
-  databaseId: "predictions",
+  databaseId: "(default)",
 });
 
 async function getPredictionHistoryHandler(request, h) {
